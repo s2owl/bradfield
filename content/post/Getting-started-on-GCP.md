@@ -176,3 +176,7 @@ Edit the file config.toml and change the title to something different such as â€
 Go to the Cloud Build console and check the build history. You should see a successful deployment if not, consult the build log to identify the problem. Browse to the hosting URL you had received before. If you do not have it, you can go to the Firebase console and examine the project to find the domain name. It may take a few minutes for the CDN to update.
 After the build has successfully completed, look at the build details.
 The total build time was 25 seconds.
+
+#Add Alerts to Cloud Build
+
+https://cloud.google.com/cloud-build/docs/configuring-notifications/configure-slacks
