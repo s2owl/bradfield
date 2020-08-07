@@ -34,7 +34,7 @@ author = "authors"
 
 [params]
   author = "Hugo Authors"
-  description = "Cloud Technique Development."
+  description = "This site is a blog by IT professionals trying something new and outside of their day to day role.  It's initially Google Cloud Focused but not exclusively Google Cloud and we'll learn bits as we go along"
   homepageImage = "/images/homepage-image.png"
   share = true
   showLanguageSwitcher = false
