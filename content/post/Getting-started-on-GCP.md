@@ -1,11 +1,11 @@
 +++
 authors = [
     "Tobias Brecker"]
-title = "Creating a website with automation on Firebase"
+title = "Creating a website with automation and Firebase"
 date = "2020-08-07"
 description = "How I managed to create a simple Hugo website, build a CI/CD pipeline and deploy on Firebase"
 tags = [
-    "GCP","Google","GitHub","Cloud Build","Source Repositories","Firebase"
+    "GCP","Google","GitHub","Cloud Build","Source Repositories","Firebase","Slack"
 ]
 images = [
     "markdown-syntax.jpg",
@@ -203,4 +203,4 @@ The total build time was 22 seconds.
 
 #### Add Alerts to Cloud Build
 
-Another literal document to follow https://cloud.google.com/cloud-build/docs/configuring-notifications/configure-slacks
+This is a work in progress >> https://cloud.google.com/cloud-build/docs/configuring-notifications/configure-slacks
