@@ -24,6 +24,14 @@ So what is this post about?  I've decided to almost make this post my learning j
   6. Firebase setup
   7. Getting Slack to tell you the Google Build status
 
+Some background / objectives:  
+There are, however, various operational complexities. You may want to version control your postings, host your web site on a content delivery network (“CDN”) and provision an SSL certificate.
+You can address many of these process matters by using a Continuous Integration / Continuous Deployment pipeline. These pipelines enable developers to rapidly innovate by automating the entire deployment process. A website publishing platform would enable a content author to submit new content which would in turn launch the pipeline that in turn performs all the publishing tasks.
+In this article, I will try and show you how to leverage Google Cloud to create a pipeline for deploying websites based on Hugo, a static site builder. You create your web content, run it through Hugo which in turn produces the web pages. We will use the following Google Cloud services:
+Cloud Source Repositories will hold the content. The service provides private Git-compatible repositories that can trigger Cloud Build pipelines when commits are made to branches. You can also use GitHub if you prefer.
+Firebase will host the website. Firebase is an application framework that provides a content delivery network (CDN) and SSL certificates.
+Cloud Build will be used to create the pipeline. The pipeline consists of steps each of which is run in a container to produce the build artifacts.
+
 #### Prep Work
 
 - If you want a custom domain - buy it now on https://domains.google/intl/en-GB/ its very simple and very straight forward.  Having used AWS' Route 53 I find them both very intuitive and straight forward.
@@ -59,13 +67,6 @@ The quick start will introduce you to the themes.  You will perhaps spend more t
 Follow the installation steps of the themes in to your local copy of the website.  I personally found it useful to copy the Example Site which comes with every theme to be my actual site and see how it works.  It takes time and you really don't need to rush this bit.  By then end of this step you need to be comfortable understanding how to view your site locally.
 
 Static web platforms like Hugo have become popular because of their ability to produce websites that do not require web servers. With static web platforms there are no operating systems to patch and no web server software to maintain.
-
-*There are, however, various operational complexities. You may want to version control your postings, host your web site on a content delivery network (“CDN”) and provision an SSL certificate.
-You can address many of these process matters by using a Continuous Integration / Continuous Deployment pipeline. These pipelines enable developers to rapidly innovate by automating the entire deployment process. A website publishing platform would enable a content author to submit new content which would in turn launch the pipeline that in turn performs all the publishing tasks.
-In this article, I will show you how to leverage Google Cloud to create a pipeline for deploying websites based on Hugo, a static site builder. You create your web content, run it through Hugo which in turn produces the web pages. We will use the following Google Cloud services:
-Cloud Source Repositories will hold the content. The service provides private Git-compatible repositories that can trigger Cloud Build pipelines when commits are made to branches. You can also use GitHub if you prefer.
-Firebase will host the website. Firebase is an application framework that provides a content delivery network (CDN) and SSL certificates.
-Cloud Build will be used to create the pipeline. The pipeline consists of steps each of which is run in a container to produce the build artifacts.*
 
 #### Hosting the site in GitHub
 
@@ -173,8 +174,6 @@ Select Hosting using the arrow and spacebar keys. When asked for a project optio
 
 After the application has been deployed, you will receive a hosting URL. Click on it and you will see the same website being served from the Firebase CDN (content delivery network). If you receive a generic “welcome” message, wait a few minutes for the CDN to be initialized and refresh the browser window. Save this hosting URL for later use.
 
-Perform the initial commit
-
 #### Create the Cloud Build trigger
 In order to start Cloud Build when changes are committed to the repository, we will need to define a Cloud Build trigger. Follow these steps to create the trigger making the following changes:
 - Pick a name for the trigger such as “commit-to-master-branch”.
@@ -204,4 +203,4 @@ The total build time was 22 seconds.
 
 #### Add Alerts to Cloud Build
 
-https://cloud.google.com/cloud-build/docs/configuring-notifications/configure-slacks
+Another literal document to follow https://cloud.google.com/cloud-build/docs/configuring-notifications/configure-slacks
