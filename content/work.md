@@ -1,7 +1,7 @@
 ---
-title: 'We Help Business Grow'
+title: 'This is a scratch space for my cloud learning'
 button: 'Our Work'
 weight: 1
 ---
 
-Lorem ipsum dolor sit amet, et essent mediocritatem quo, choro volumus oporteat an mei. Numquam dolores mel eu, mea docendi omittantur et, mea ea duis erat. Elit melius cu ius. Per ex novum tantas putant, ei his nullam aliquam apeirian. Aeterno quaestio constituto sea an, no eum intellegat assueverit. 
+It's not very exciting to be honest.  I wanted to learn about Google Cloud by learning and doing.  I figured I'd create this site to house all the elements I was learning.
