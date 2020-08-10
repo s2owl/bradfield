@@ -205,7 +205,7 @@ After the build has successfully completed, look at the build details.
 
 The total build time was on average 31 seconds.
 
-![images](images/CB.png)
+![](/images/CB.png)
 
 #### Add Alerts to Cloud Build
 
