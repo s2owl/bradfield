@@ -98,7 +98,7 @@ I literally followed this document: https://cloud.google.com/source-repositories
 
 ![Google Source Repositories](/images/images/Google_Cloud2_hu0f35a20467e9f4c3de7e83265ac5caf0_40077_700x350_resize_box_2.png)
 -----
-![Google Source Repositories](/images/Google_Cloud2_hu0f35a20467e9f4c3de7e83265ac5caf0_40077_700x350_resize_box_2.png)
+![Google Source Repositories](/Google_Cloud2_hu0f35a20467e9f4c3de7e83265ac5caf0_40077_700x350_resize_box_2.png)
 
 #### Install Hugo in to Cloud Shell
 We will now install Hugo within the Cloud Shell environment so we can build the website on Cloud Shell.
