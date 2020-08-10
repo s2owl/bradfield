@@ -96,7 +96,7 @@ Create a .gitignore file to keep extra files from being committed.
 
 I literally followed this document: https://cloud.google.com/source-repositories/docs/mirroring-a-github-repository it was really simple and clear to follow.
 
-![images](SR.png)
+![Google Source Repositories](SR.png)
 
 #### Install Hugo in to Cloud Shell
 We will now install Hugo within the Cloud Shell environment so we can build the website on Cloud Shell.
@@ -205,7 +205,7 @@ After the build has successfully completed, look at the build details.
 
 The total build time was on average 31 seconds.
 
-![](/images/CB.png)
+![Google Cloud Build](CB.png)
 
 #### Add Alerts to Cloud Build
 
