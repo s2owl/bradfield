@@ -32,6 +32,8 @@ Cloud Source Repositories will hold the content. The service provides private Gi
 Firebase will host the website. Firebase is an application framework that provides a content delivery network (CDN) and SSL certificates.
 Cloud Build will be used to create the pipeline. The pipeline consists of steps each of which is run in a container to produce the build artifacts.
 
+![Workflow](/images/workflow.jpg)
+
 #### Prep Work
 
 - If you want a custom domain - buy it now on https://domains.google/intl/en-GB/ its very simple and very straight forward.  Having used AWS' Route 53 I find them both very intuitive and straight forward.
