@@ -32,14 +32,9 @@ Cloud Source Repositories will hold the content. The service provides private Gi
 Firebase will host the website. Firebase is an application framework that provides a content delivery network (CDN) and SSL certificates.
 Cloud Build will be used to create the pipeline. The pipeline consists of steps each of which is run in a container to produce the build artifacts.
 
-![Workflow](workflow.jpg)
-![Workflow1](images/workflow.jpg)
-![Workflow2](images/images/workflow.jpg)
-![Workflow3](_gen/images/images/workflow.jpg)
-![Workflow4](resources/_gen/images/images/workflow.jpg)
+![Workflow](/images/workflow.jpg)
 
 #### Prep Work
-
 - If you want a custom domain - buy it now on https://domains.google/intl/en-GB/ its very simple and very straight forward.  Having used AWS' Route 53 I find them both very intuitive and straight forward.
 - If you are following this you need to have signed up to Google Cloud Console
     - You must have a project allocated for this and know how to set one up (inc billing aspects)
@@ -102,8 +97,6 @@ Create a .gitignore file to keep extra files from being committed.
 
 I literally followed this document: https://cloud.google.com/source-repositories/docs/mirroring-a-github-repository it was really simple and clear to follow.
 
-![Google Source Repositories](/images/SR.png)
-
 #### Install Hugo in to Cloud Shell
 We will now install Hugo within the Cloud Shell environment so we can build the website on Cloud Shell.
 Open the Cloud Shell and ensure the default project ID is set to the ID of the Firebase project.
@@ -159,7 +152,7 @@ Use your favorite text editor to create the cloudbuild.yaml file with the follow
       _HUGO_VERSION: 0.69.2   
 
 #### What does this block mean?
-
+![Google Cloud Pipeline](/images/cbpipeline.png)
 There are three named steps in this file each of which is performed by a container image. The first two steps use a Google-supported builder to perform a wget command to download the Hugo and Firebase tools. These two steps run in parallel. Using the wget builder is faster than installing wget manually.
 The third step uses a standard Ubuntu container to install Hugo and Firebase after which the site is built and deployed. You could also create your builder container that contains Hugo and Firebase. I chose this approach for two reasons. First, it’s useful to be able to change the version of Hugo. Second, I want to get the latest version of Firebase with the most up to date features.
 The file also uses two custom substitution variables (_HUGO_VERSION and _FIREBASE_PROJECT_NAME)_ to allow for this template to be used in different environments.
