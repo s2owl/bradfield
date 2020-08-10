@@ -96,6 +96,8 @@ Create a .gitignore file to keep extra files from being committed.
 
 I literally followed this document: https://cloud.google.com/source-repositories/docs/mirroring-a-github-repository it was really simple and clear to follow.
 
+![images](SR.png)
+
 #### Install Hugo in to Cloud Shell
 We will now install Hugo within the Cloud Shell environment so we can build the website on Cloud Shell.
 Open the Cloud Shell and ensure the default project ID is set to the ID of the Firebase project.
@@ -180,10 +182,12 @@ In order to start Cloud Build when changes are committed to the repository, we w
 - For the event, select “Push to a branch”, select the Cloud Source Repository we created earlier, and select “master” as the branch.
 - For Build configuration file type, accept the default location of cloudbuild.yaml.
 - Add the substitution variable _FIREBASE_PROJECT_NAME __ and set it to be the value of “[PROJECT_NAME]” (without the quotation marks).
+
 ##### Update the Cloud Build service account
 The Cloud Build Service account needs to have permissions to use Firebase to deploy the website.
 - Go to the IAM section of the Cloud Console.
 - Locate the entry containing “cloudbuild.gserviceaccount.com” and add the role “Firebase Hosting Admin” to it. Note that this role is part of the Firebase Products group.
+
 ##### Test the Pipeline
 Now that you have created the pipeline, you can now make a change to the site and commit it and see if the change propagates.
 Open the Cloud Shell if it is not already open.
@@ -199,7 +203,9 @@ Edit the file config.toml and change the title to something different such as �
 Go to the Cloud Build console and check the build history. You should see a successful deployment if not, consult the build log to identify the problem. Browse to the hosting URL you had received before. If you do not have it, you can go to the Firebase console and examine the project to find the domain name. It may take a few minutes for the CDN to update.
 After the build has successfully completed, look at the build details.
 
-The total build time was 22 seconds.
+The total build time was on average 31 seconds.
+
+![images](images/CB.png)
 
 #### Add Alerts to Cloud Build
 
