@@ -32,7 +32,11 @@ Cloud Source Repositories will hold the content. The service provides private Gi
 Firebase will host the website. Firebase is an application framework that provides a content delivery network (CDN) and SSL certificates.
 Cloud Build will be used to create the pipeline. The pipeline consists of steps each of which is run in a container to produce the build artifacts.
 
-![Workflow](/images/workflow.jpg)
+![Workflow](workflow.jpg)
+![Workflow1](/images/workflow.jpg)
+![Workflow2](/images/images/workflow.jpg)
+![Workflow3](/_gen/images/images/workflow.jpg)
+![Workflow4](/resources/_gen/images/images/workflow.jpg)
 
 #### Prep Work
 
