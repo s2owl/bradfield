@@ -34,7 +34,7 @@ author = "authors"
 
 [params]
   author = "Hugo Authors"
-  description = "Showcasing labs to demonstrate learning"
+  description = "This is an online space to show some of the things I've learned how to do"
   homepageImage = "/images/homepage-image.png"
   share = true
   showLanguageSwitcher = false
