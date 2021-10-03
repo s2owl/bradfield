@@ -1,5 +1,5 @@
 baseURL = "https://brecker.app"
-title = "My Online Demo Space"
+title = "Tobias"
 #copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
 paginate = 3
 languageCode = "en"
@@ -34,7 +34,7 @@ author = "authors"
 
 [params]
   author = "Hugo Authors"
-  description = "This is an online space to show some of the things I've learned how to do"
+  description = "My Online Demo Space"
   homepageImage = "/images/homepage-image.png"
   share = true
   showLanguageSwitcher = true
