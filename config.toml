@@ -34,7 +34,7 @@ author = "authors"
 
 [params]
   author = "Hugo Authors"
-  description = "Hi, I'm Tobias <br/> <br/> This is a space where I can demonstrate some of the things I've learned/completed"
+  description = "<br/>Hi, I'm Tobias <br/> <br/> This is a space where I can demonstrate some of the things I've learned/completed"
   homepageImage = "/images/homepage-image.png"
   share = true
   showLanguageSwitcher = true
