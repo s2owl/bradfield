@@ -1,7 +1,7 @@
 baseURL = "https://brecker.app"
-title = "Brecker.app"
+title = "My Online Demo Space"
 #copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
-paginate = 2
+paginate = 3
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
@@ -37,7 +37,7 @@ author = "authors"
   description = "This is an online space to show some of the things I've learned how to do"
   homepageImage = "/images/homepage-image.png"
   share = true
-  showLanguageSwitcher = false
+  showLanguageSwitcher = true
 
   # Custom CSS and JS. Relative to /static/css and /static/js respectively.
   customCSS = []
