@@ -34,7 +34,7 @@ author = "authors"
 
 [params]
   author = "Hugo Authors"
-  description = "My Online Demo Space"
+  description = "My Online Demo Space"  "Does this work?"
   homepageImage = "/images/homepage-image.png"
   share = true
   showLanguageSwitcher = true
