@@ -13,4 +13,4 @@ images = [
 +++
 
 ---
-Here is the presnetation: https://docs.google.com/presentation/d/1nj1-ira2kpIOM5YWaKqknGwD5R8wTxFcTWjcjq-aCas/edit?usp=sharing
+Here is the presentation: https://docs.google.com/presentation/d/1nj1-ira2kpIOM5YWaKqknGwD5R8wTxFcTWjcjq-aCas/edit?usp=sharing
