@@ -8,7 +8,7 @@ tags = [
      "GCP","Google","Twilio","Serverless","Cloud Run","Cloud Build","Node.js"
 ]
 images = [
-    "football.jpg",
+    "voicemail-transcription-apps.jpg",
 ]
 +++
 
