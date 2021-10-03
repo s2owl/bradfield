@@ -3,7 +3,7 @@ authors = [
     "Tobias Brecker"]
 title = "Football League Sweepstake"
 date = "2021-08-01"
-description = "How I managed to create a simple Hugo website, build a CI/CD pipeline and deploy on Firebase"
+description = "Creating a serverless Football League sweepstake app, with a CI/CD pipeline"
 tags = [
      "GCP","Google","Football League","Cloud Build","App Engine","Source Repositories","Firebase","Github","PHP" 
 ]
