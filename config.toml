@@ -44,21 +44,21 @@ author = "authors"
   customJS = []
 
   [params.social]
-    rss = true
-    email = "example@example.com"
-    facebook = "https://facebook.com"
-    twitter = "https://twitter.com"
+    # rss = true
+    # email = "example@example.com"
+    # facebook = "https://facebook.com"
+    twitter = "https://twitter.com/tabrecker82"
     linkedin = "https://linkedin.com"
-    stack-overflow = "https://stackoverflow.com"
-    instagram = "https://stackoverflow.com"
-    github = "https://github.com"
-    weibo = "https://www.weibo.com"
-    medium = "https://medium.com"
-    pinterest = "https://pinterest.com"
-    reddit = "https://reddit.com"
-    gitlab = "https://gitlab.com"
-    mastodon = "https://mastodon.social"
-    keybase = "https://keybase.io/"
+    # stack-overflow = "https://stackoverflow.com"
+    instagram = "https://instagram.com/s2owl"
+    github = "https://github.com/s2owl"
+    # weibo = "https://www.weibo.com"
+    # medium = "https://medium.com"
+    # pinterest = "https://pinterest.com"
+    # reddit = "https://reddit.com"
+    # gitlab = "https://gitlab.com"
+    # mastodon = "https://mastodon.social"
+    # keybase = "https://keybase.io/"
 
   [params.prismJS]
     enable = true
