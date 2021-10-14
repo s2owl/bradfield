@@ -1,4 +1,4 @@
-baseURL = "./"
+baseURL = "https://brecker.app"
 title = "My Online Demo Space"
 #copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
 paginate = 3
@@ -8,7 +8,7 @@ enableInlineShortcodes = true
 footnoteReturnLinkContents = "^"
 googleAnalytics = "UA-XXXX"
 DisqusShortname = ""
-theme = "showcase"
+theme = "hugo-theme-chunky-poster"
 
 [menu]
   [[menu.main]]
