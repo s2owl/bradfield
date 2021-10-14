@@ -29,4 +29,3 @@ steps:
 
 substitutions:
   _HUGO_VERSION: 0.74.3
-  _FIREBASE_PROJECT_NAME: masterfunfair
